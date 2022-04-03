@@ -13,8 +13,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="./css/pagina.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/pagina.css">
+    <link rel="stylesheet" href="./css/imagenes.css"> 
     <title>Inicio</title>
 </head>
 
@@ -22,10 +23,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="" id="logo"><img src="" alt="" id="logo"
-                        class="d-inline-block align-text-center rounded-pill">
+                <a class="navbar-brand" href="index.html" id="logo"><i class="bi bi-code-slash"></i>
                     Raúl Arenas</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -34,13 +35,11 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href=""></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="canciones.html">Portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href=""></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="canciones.html">Conctato</a>
@@ -58,7 +57,7 @@
     <main>
         <div class="container-fluid">
             <div class="p-5">
-                <div class="row border" id="fondo">
+                <div class="row rounded-pill shadow-lg" id="fondo">
                     <div class="col-12 col-md-6 text-center">
                         <div class="p-5">
                             <br>
@@ -71,37 +70,59 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="p-5">
-                            <img src="./img/desarrollador.jpg" class="img-fluid mx-auto" >
+                            <img src="./img/desarrollador.jpg" class="img-fluid mx-auto rounded-pill">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="p-5 py-0">
-                <div class="row border" id="fondo">
-                    <div class="col-12 col-md-6 text-center">
-                        <div class="p-5">
-                            <br>
-                            <br>
-                            <h1>Hola.. soy <b>Raúl Arenas</b></h1>
-                            <p>Desarrollador <b>FRONT-END</b></p>
-                            <br>
-                            <a class="btn btn-outline-dark" href="canciones.html">Ver Proyectos</a>
+            <div class="p-5 py-2">
+                <div class="row rounded shadow-lg" id="fondo">
+                    <div class="p-5">
+                        <br>
+                        <h1 class="text-center"><b>Tecnologias que manejo</b></h1>
+                        <div class="row text-center p-5">
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/bootstrap.png" ></figure>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/html.png"></figure>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/css3.png"></figure>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/js.png"></figure>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="p-5">
-                            <img src="./img/desarrollador.jpg" class="img-fluid mx-auto" >
+                        <div class="row text-center p-5">
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/mysql.png"></figure>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/postgresql.png"></figure>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/mongodb.png"></figure>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <figure id="tecno"><img src="./img/tecno/nodejs.png"></figure>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
+    <br>
     <footer>
-
+        <div class="container-fluid text-center">
+            <div class="p-3">
+                <i class="bi bi-linkedin"></i>
+                <p>&copy; Copyright Raúl Arenas</p>
+            </div>
+        </div>
     </footer>
 
 </body>
