@@ -1,18 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
 #logo{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
     font-size: 30px;
 }
 #navbar{
-    background-color:rgba(87, 78, 97, 0.13);
+    background-color:rgba(25, 24, 27, 0.37);
+    align-content: left;
     font-size:25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #fondo{
     background-color:rgba(87, 78, 97, 0.13);
 }
+.btn-scrolltop{
+    position: fixed;
+    bottom: 130px;
+    right: 10px;
+    padding: 15px 20px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(105px);
+    transition: 0.8s;
+}
+.btn-scrolltop-on{
+    transform: translateY(0);
+}
+
+
+
 footer{
-    background-color:rgba(87, 78, 97, 0.13);
+    background-color:rgba(25, 24, 27, 0.37);
     font-size:20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
