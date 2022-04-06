@@ -1,25 +1,23 @@
+addEventListener('DOMContentLoaded', () => {
+    const boton_ir_arriba = document.querySelector('#ir_arriba_boton')
 
-function subir(){
-    aparecer();
-    const btn_scrolltop = document.getElementById('btn-scrolltop')
-    btn_scrolltop.addEventListener('click', () => {
-    window.scrollTo(0, 0)
-    }) 
-}
-subir();
+    const obtener_pixeles_inicio = () => document.documentElement.scrollTop || document.body.scrollTop
 
-window.onscroll = () => {
-    console.log(window.scrollY);
-
-}
-
-function aparecer(){
-    const add_btn_scrolltop = () => {
-        if(window.scrollY < 300){
-            btn_scrolltop.classList.remove("btn-scrolltop-on")
-        }
-        else{
-            btn_scrolltop.classList.add("btn-scrolltop-on")
+    const irArriba = () => {
+        if (obtener_pixeles_inicio() > 0){
+            requestAnimationFrame(irArriba)
+            scrollTo(0, obtener_pixeles_inicio() - (obtener_pixeles_inicio() / 20))
         }
     }
-}
+
+    const indicarScroll = () => {
+        if (obtener_pixeles_inicio () > 400) {
+            boton_ir_arriba.className = 'mostrar'
+        } else {
+            boton_ir_arriba.className = 'ocultar'
+        }
+    }
+
+    boton_ir_arriba.addEventListener('click', irArriba)
+    window.addEventListener('scroll', indicarScroll)
+})

@@ -15,24 +15,30 @@ html{
 #fondo{
     background-color:rgba(87, 78, 97, 0.13);
 }
-.btn-scrolltop{
+#ir_arriba_boton{
     position: fixed;
-    bottom: 130px;
-    right: 10px;
-    padding: 15px 20px;
-    background: black;
-    color: white;
-    border: 1px solid black;
-    border-radius: 100%;
+    font-size: 50px;
+    bottom: 10px;
+    right: 15px;
+    padding: 10px 20px;
+    /*background: black;*/
+    color: black;
+    /*border: 1px solid black;*/
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+#ir_arriba_boton:hover{
     cursor: pointer;
-    transform: translateY(105px);
-    transition: 0.8s;
+    transform: scale(1.1);
 }
-.btn-scrolltop-on{
-    transform: translateY(0);
+.ocultar{
+    opacity: 0;
+    visibility: hidden;
 }
-
-
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
 
 footer{
     background-color:rgba(25, 24, 27, 0.37);
