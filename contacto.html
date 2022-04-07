@@ -56,59 +56,34 @@
     <main>
         <div class="container-fluid">
             <div class="p-5">
-                <div class="row rounded-pill shadow-lg" id="fondo">
-                    <div class="col-12 col-md-6 text-center">
-                        <div class="p-5">
+                <div class="row">
+                    <div class="col-md-6 border p-5 m-auto" id="login">
+                        <h1 class="mb-3 border-bottom border-dark text-center">Contacto</h1>
+                        <form class="form-signin">
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" id="basic-addon1" for="nombre">Nombre *</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre"
+                                    placeholder="Nombre"/>
+                                <span id="errorNombre" class="error"></span>
+                            </div>
                             <br>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" id="basic-addon1" for="email">Email *</label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="correo electrónico"/>
+                                <span id="errorEmail" class="error"></span>
+                            </div>
                             <br>
-                            <h1>Hola.. soy <b>Raúl Arenas</b></h1>
-                            <p>Desarrollador <b>FRONT-END</b></p>
-                            <br>
-                            <a class="btn btn-outline-dark" href="canciones.html">Ver Proyectos</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="p-5">
-                            <img src="./img/desarrollador.jpg" class="img-fluid mx-auto rounded-pill">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="p-5 py-2">
-                <div class="row rounded shadow-lg" id="fondo">
-                    <div class="p-5">
-                        <br>
-                        <h1 class="text-center"><b>Tecnologias que manejo</b></h1>
-                        <div class="row text-center p-5">
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/bootstrap.png" ></figure>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" id="basic-addon1" for="mensaje">Mensaje *</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje" rows="4"></textarea>
+                                <span id="errorMensaje" class="error"></span>
                             </div>
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/html.png"></figure>
+                            <div class="mt-3">
+                                <button type="submit" class="btn btn-secondary" value="Continuar"
+                                    onclick="return validar(this.form)">Enviar</button>
                             </div>
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/css3.png"></figure>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/js.png"></figure>
-                            </div>
-                        </div>
-                        <div class="row text-center p-5">
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/mysql.png"></figure>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/postgresql.png"></figure>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/mongodb.png"></figure>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <figure id="tecno"><img src="./img/tecno/nodejs.png"></figure>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -126,6 +101,7 @@
     </footer>
 
 <script src="./js/btnSubida.js"></script>
+<script src="./js/validar.js"></script>
 
 </body>
 </html>
