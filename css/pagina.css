@@ -1,6 +1,12 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
 #logo{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black;
@@ -18,12 +24,10 @@ html{
 #ir_arriba_boton{
     position: fixed;
     font-size: 50px;
-    bottom: 10px;
+    bottom: -3px;
     right: 15px;
     padding: 10px 20px;
-    /*background: black;*/
     color: black;
-    /*border: 1px solid black;*/
     border-radius: 50%;
     transition: all 0.2s;
 }
@@ -44,5 +48,6 @@ footer{
     background-color:rgba(25, 24, 27, 0.37);
     font-size:20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
