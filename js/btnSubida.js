@@ -11,7 +11,7 @@ addEventListener('DOMContentLoaded', () => {
     }
 
     const indicarScroll = () => {
-        if (obtener_pixeles_inicio () > 400) {
+        if (obtener_pixeles_inicio () > 150) {
             boton_ir_arriba.className = 'mostrar'
         } else {
             boton_ir_arriba.className = 'ocultar'
