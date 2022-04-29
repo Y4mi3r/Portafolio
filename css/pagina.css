@@ -1,53 +1,58 @@
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  background-color: rgba(0, 0, 0, 0.151);
 }
 
 #logo{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
-    font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:black;
+  font-size: 30px;
 }
 #navbar{
-    background-color:rgba(25, 24, 27, 0.37);
-    align-content: left;
-    font-size:25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*background-color:rgba(25, 24, 27, 0.37);*/
+  background-color: white;
+  align-content: left;
+  font-size:25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #fondo{
-    background-color:rgba(87, 78, 97, 0.13);
+  /* background-color:rgba(87, 78, 97, 0.13); */
+  background-color: white;
+
 }
 #ir_arriba_boton{
-    position: fixed;
-    font-size: 50px;
-    bottom: -3px;
-    right: 15px;
-    padding: 10px 20px;
-    color: black;
-    border-radius: 50%;
-    transition: all 0.2s;
+  position: fixed;
+  font-size: 50px;
+  bottom: -3px;
+  right: 15px;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 50%;
+  transition: all 0.2s;
 }
 #ir_arriba_boton:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .ocultar{
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 .mostrar{
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 footer{
-    background-color:rgba(25, 24, 27, 0.37);
-    font-size:20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*background-color:rgba(25, 24, 27, 0.37);*/
+  background-color: white;
+  font-size:20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
