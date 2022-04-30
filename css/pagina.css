@@ -8,6 +8,12 @@ body{
   background-color: rgba(0, 0, 0, 0.151);
 }
 
+.centrar{
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
 #logo{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:black;
@@ -42,7 +48,10 @@ body{
 .ocultar{
   opacity: 0;
   visibility: hidden;
+  max-width: 45em;
+  display: none;
 }
+
 .mostrar{
   opacity: 1;
   visibility: visible;
@@ -54,5 +63,11 @@ footer{
   font-size:20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
     
+}
+
+.hidden{
+  max-width: 45em;
+  display: none;
+  visibility: hidden;
 }
 
